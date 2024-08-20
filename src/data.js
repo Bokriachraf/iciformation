@@ -7,6 +7,7 @@ const data = {
             image:'images/p1.jfif',
             price:120,
             brand:'Nike',
+            CountInStock:1,
             rating:4.5,
             numReviews:10,
             description: 'quality product'
@@ -29,6 +30,7 @@ const data = {
             image:'images/p3.jfif',
             price:120,
             brand:'Nike',
+            CountInStock:15,
             rating:4.5,
             numReviews:10,
             description: 'quality product'
@@ -40,6 +42,7 @@ const data = {
             image:'images/p4.jfif',
             price:70,
             brand:'Nike',
+            CountInStock:15,
             rating:4.5,
             numReviews:10,
             description: 'quality product'
@@ -51,6 +54,7 @@ const data = {
             image:'images/p5.jfif',
             price:120,
             brand:'Nike',
+            CountInStock:15,
             rating:4.5,
             numReviews:15,
             description: 'quality product'
@@ -62,6 +66,8 @@ const data = {
             image:'images/p1.jfif',
             price:160,
             brand:'ADIDAS',
+            CountInStock:0,
+
             rating:5,
             numReviews:10,
             description: 'quality product'

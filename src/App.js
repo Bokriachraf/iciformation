@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 
@@ -19,6 +20,8 @@ function App() {
     <main>
     <Routes> 
     <Route path='/'element={<HomeScreen/>}></Route>
+    <Route path='/product/:id'element={<ProductScreen/>}></Route>
+
     </Routes>
     </main>
     </div>  
