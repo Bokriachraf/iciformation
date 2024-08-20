@@ -1,9 +1,11 @@
 import React from 'react';
-import data from './data';
-import Product from './components/Product';
+import HomeScreen from './screens/HomeScreen';
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
+
 
 function App() {
   return (
+    <BrowserRouter>
     <div class="grid-container">
     <header className="row">
       <div>
@@ -15,19 +17,12 @@ function App() {
       </div>
     </header>
     <main>
-    <div>
-      <div className="row center">
-      {
-        data.products.map(product => (
-        <Product product={product}/> 
-        ))
-      }
-        </div>
-        </div>
-        </main>
-
-        </div>  
-       
+    <Routes> 
+    <Route path='/'element={<HomeScreen/>}></Route>
+    </Routes>
+    </main>
+    </div>  
+    </BrowserRouter>  
   );
 }
 
