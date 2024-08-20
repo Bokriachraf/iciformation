@@ -7,7 +7,7 @@ import {BrowserRouter,Route,Routes} from 'react-router-dom'
 function App() {
   return (
     <BrowserRouter>
-    <div class="grid-container">
+    <div className="grid-container">
     <header className="row">
       <div>
         <a className="brand" href="index.html">mon projet</a>
