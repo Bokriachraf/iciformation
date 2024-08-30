@@ -1,6 +1,6 @@
 {
   "name": "monprojet",
-  "type":"module",
+  "type": "module",
   "version": "1.0.0",
   "description": "my description",
   "main": "index.js",
@@ -10,6 +10,8 @@
   "author": "bokri",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "mongoose": "^8.6.0"
   }
 }
