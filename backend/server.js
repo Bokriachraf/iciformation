@@ -1,9 +1,12 @@
 import express from "express";
 import data from './data.js';
+import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 
+dotenv.config();
 const app = express();
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 mongoose.connect('mongodb://localhost/monprojet',{
    useNewUrlParser:true 
 })
@@ -21,7 +24,7 @@ app.get('/api/products/:id',(req,res) => {
 app.get('/api/products',(req,res)=>{
     res.send(data.products);
 })
-
+app.use('/api/users', userRouter);
 app.get('/',(req,res)=>{
    res.send('server is ready');
 })  
