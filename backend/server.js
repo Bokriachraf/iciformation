@@ -2,12 +2,13 @@ import express from "express";
 import data from './data.js';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
+import userRouter from './routers/userRouter.js';
 
 dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-mongoose.connect('mongodb://localhost/monprojet',{
+mongoose.connect(process.env.MONGO_URI ||'mongodb://localhost/monprojet',{
    useNewUrlParser:true 
 })
 

@@ -1,8 +1,10 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import {BrowserRouter,Route,Routes, Link} from 'react-router-dom'
 import { signout } from './actions/userActions';
+import RegisterScreen from './screens/RegisterScreen';
 import SigninScreen from './screens/SigninScreen';
 
 function App() {
@@ -40,11 +42,10 @@ function App() {
     </header>
     <main>
     <Routes> 
-        <Route path='/signin'element={<SigninScreen/>}></Route>
-
     <Route path='/'element={<HomeScreen/>}></Route>
     <Route path='/product/:id'element={<ProductScreen/>}></Route>
-
+    <Route path='/signin'element={<SigninScreen/>}></Route>
+    <Route path='/register'element={<RegisterScreen/>}></Route>
     </Routes>
     </main>
     </div>  
